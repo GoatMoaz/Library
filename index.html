@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>My Library</h1>
+    </div>
+    <table id="booksTable">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Number of Pages</th>
+                <th>Is read?</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="btn">
+        <button id="newBook">Add New Book</button>
+    </div>
+    <dialog>
+        <form id="add-book-form">
+            <div class="input-container">
+                <input type="text" id="title" required="">
+                <label class="label">Title</label>
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="author" required="">
+                <label class="label">Author</label>
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="year" required="">
+                <label class="label">Year</label>
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="pages" required="">
+                <label class="label">Number of Pages</label>
+                <div class="underline"></div>
+            </div>
+
+            <div class="check">
+                <label class="cyberpunk-checkbox-label">Read?</label>
+                <input type="checkbox" class="cyberpunk-checkbox" id="read">
+            </div>
+
+            <div class="addOrCancel">
+                <button id="addBook">Add Book</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+
+</html>
